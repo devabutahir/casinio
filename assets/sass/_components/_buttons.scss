@@ -1,0 +1,97 @@
+/*--Button Area Start--*/
+/*--Button Area Start--*/
+.cmn--btn {
+	padding: 10px 30px 12px;
+	font-size: 18px;
+	line-height: 23px;
+	font-weight: 500;
+	display: inline-block;
+	color:var(--white-color) !important;
+	text-transform: capitalize;
+	font-family: 'Oswald', sans-serif;
+	transition: all 0.3s;
+	text-align: center;
+	background: linear-gradient(114.26deg, #E4A91B 13.41%, #F88021 87.24%);
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	&::before{
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		background: linear-gradient(114.26deg, #658fae 13.41%, #726ccb 87.24%);
+		height: 100%;
+		width: 0px;
+		transition:all 0.4s;
+	}
+	&:hover::before{
+		width: 100%;
+	}
+	&:hover{
+		color: var(--theme-color) !important;
+	}
+	&:hover{
+		span{
+			color: var(--white-color);
+		}
+	}
+	span{
+		z-index: 1;
+		position: relative;
+		transition: all 0.4s;
+	}
+}
+.cmn--btn2 {
+	border-radius: 10px;
+	padding: 9px 30px 11px;
+	font-size: 18px;
+	line-height: 23px;
+	font-weight: 400;
+	display: inline-block;
+	color:var(--white-color) !important;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	background: linear-gradient(#3f464a73, #54536a) padding-box,
+	linear-gradient(to right, #E4A91B, #F88021) border-box;
+	border-radius: 0.5em;
+	border: 1px solid transparent;
+	position: relative;
+	overflow: hidden;
+	&::before{
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		background: linear-gradient(114.26deg, #E4A91B 13.41%, #F88021 87.24%);
+		height: 100%;
+		width: 0px;
+		transition:all 0.4s;
+	}
+	&:hover::before{
+		width: 100%;
+	}
+	&:hover{
+		span{
+			color: var(--white-color);
+		}
+	}
+	span{
+		z-index: 1;
+		position: relative;
+		transition: all 0.4s;
+	}
+}
+.mneu-btn-grp{
+	@include flex;
+	gap: 13px;
+}
+.cmn__custom{
+	background: linear-gradient(114.26deg, #658fae 13.41%, #726ccb 87.24%);
+}
+/*--Button Area End--*/
+/*--Button Area End--*/

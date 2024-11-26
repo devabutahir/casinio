@@ -1,0 +1,167 @@
+//Banner Section Start
+.banner__section{
+    overflow: hidden;
+    position: relative;
+    background: #282472;
+    padding: 24px 0 114px;
+}
+
+.banner__left__wrap{
+    .owl-nav{
+        button.owl-prev{
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            line-height: 6px;
+            background: rgba(0, 0, 0, 0.13);
+            border-radius: 5px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            width: 28px;
+            height: 45px;
+            transition: all 0.3s;
+            i{
+                font-size: 16px;
+                color: var(--white-color);
+                transition: all 0.3s;
+            }
+            &:hover{
+                background: linear-gradient(114.26deg, #E4A91B 13.41%, #F88021 87.24%);
+              i{
+                color: var(--white-color);
+              }
+            }
+        }
+        button.owl-next{
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            line-height: 6px;
+            background: rgba(0, 0, 0, 0.13);
+            border-radius: 5px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            width: 28px;
+            height: 45px;
+            transform: translateY(-50%);
+            transition: all 0.3s;
+            i{
+                font-size: 16px;
+                line-height: 20px;
+                color: var(--white-color);
+            }
+            &:hover{
+                background: linear-gradient(114.26deg, #E4A91B 13.41%, #F88021 87.24%);
+              i{
+                color: var(--white-color);
+              }
+            }
+        }
+    }
+    .owl-dots{
+        .owl-dot{
+            span{
+                background-color: var(--border-two);
+                width: 12px;
+                height: 12px;
+            }
+            &.active{
+                span{
+                    background-color: var(--theme-color);
+                    width: 12px;
+                }
+            }
+        }
+    }
+}
+.banner__left__items{
+    background: url(../../assets/img/banner/banner.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 99px 0 99px;
+    text-align: center;
+    margin:  0 auto;
+}
+.banner__content{
+    position: relative;
+    .title__one{
+        color: var(--white-color);
+        font-weight: 700;
+    }
+    .title__two{
+        color: var(--white-color);
+        font-weight: 700;
+        font-size: 76px;
+        line-height: 98.8px;
+        font-family: "Oswald", sans-serif;
+    }
+    .button__grp{
+        margin-top: 40px;
+        justify-content: center;
+    }
+}
+.banner__winer{
+    background-color: var(--banner-box);
+    border-radius: 20px;
+    padding: 25px 30px 25px;
+    height: 100%;
+    text-align: center;
+    h5{
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    .head__user{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 29px;
+        h6{
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    .winner__attach{
+        justify-content: space-between;
+    }
+    .user__body{
+        li{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .thumb{
+                display: block;
+                width: 30px;
+                height: 30px;
+                img{
+                    @include imgw;
+                    border-radius: 50%;
+                }
+            }
+            span{
+                color: var(--white-color);
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+            }
+            &:not(:last-child){
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1199px){
+   .banner__winer{
+        padding: 20px 15px 20px;
+        .head__user{
+           h6{
+            font-size: 16px;
+           }
+        }
+        .user__body{
+            li{
+                span{
+                    font-size: 10px;
+                }
+            }
+        }
+   }
+}
+//Banner Section End
